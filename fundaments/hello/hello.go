@@ -3,8 +3,13 @@ package main
 import "fmt"
 
 
+const enHelloPrefix = "Hello, "
+
 func Hello(name string) string {
-  return "Hello " + name
+  if name == "" {
+    return "Hello, World"
+  }
+  return enHelloPrefix + name
 }
 
 
